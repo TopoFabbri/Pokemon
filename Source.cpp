@@ -217,7 +217,7 @@ Pokemon Fight(Pokemon pj, Pokemon wild)
 	{
 		system("cls");
 		(turn ? wild.hp : pj.hp) -= (turn ? pjDamage : wild.damage);
-		pj.xp += 0.05 * wild.level;
+		pj.xp += 0.1 * wild.level;
 		cout << pj.name << "           " << wild.name << endl
 			<< pj.hp << "               " << wild.hp << endl
 			<< pj.level << "               " << wild.level << endl;
